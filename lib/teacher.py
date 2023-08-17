@@ -19,4 +19,4 @@ class Teacher(User):
             ]
 
     def teach(self):
-        return self.knowledge[random.randint(0, self.knowledge.__len__())]
+        return self.knowledge[random.randint(0, self.knowledge.__len__() - 1)]
